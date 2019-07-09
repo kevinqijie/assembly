@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    width:100%;
+    height:100%;
+    background-color: #000;
+    overflow: hidden;
+}
+.warrper{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .9);
+    position: relative;
+}
+.label{
+    display: inline-block;
+    transition:left 1s,top 1s;
+    transform-origin: 0% 0%;
+    text-align: center;
+    padding:0 5px;
+    font-size:19px;
+}

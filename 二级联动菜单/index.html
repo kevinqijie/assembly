@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <label for="province">
+        省份
+    </label>
+    <select name="province" id="province">
+     <option value="">==请选择==</option>
+    </select>
+    <label for="City">城市</label>
+    <select name="City" id="City">
+            <option value="">==请选择==</option>
+    </select>
+    <script>
+        var province = document.getElementById('province'),
+            CityN =document.getElementById('City');
+        var region = [
+            {
+                province: {
+                    name: '河北省',
+                    city: [{
+                        name: '石家庄'
+                    },
+                    {
+                        name: '唐山'
+                    }]
+                }
+            },
+            {
+                province: {
+                    name: '河南省',
+                    city: [{
+                        name: '郑州庄'
+                    },
+                    {
+                        name: '开封'
+                    }]
+                }
+            }
+        ]
+        region.forEach(function (item) {
+            var option = document.createElement('option');
+
+            option.vaule = item.province.name;
+            option.innerText = item.province.name;
+            province.appendChild(option);
+        })
+        province.onchange = function () {
+            var City = [],
+                Value = this.value;
+            region.forEach(function (item) {
+                if(item.province.name==Value){
+                    City = item.province.city;
+                }
+            })
+            CityN.innerHTML=` <option value="">==请选择==</option>`
+            City.forEach(function (item) {
+            var option = document.createElement('option');
+
+            option.vaule = item.name;
+            option.innerText = item.name;
+            CityN.appendChild(option);
+        })
+        }
+
+    </script>
+</body>
+
+</html>

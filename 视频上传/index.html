@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="filebox">
+        <input type="file" class="file">
+        <a href="javascript:;" class="btn">上传视频</a>
+    </div>
+    <script>
+    var oMfile = document.querySelector('.file');
+  
+    oMfile.onchange = function(e){
+        // console.log(this.value)
+        // var form = new FormData();
+        // form.append('file', file);
+        var file = e.target.files[0];
+        var form = new FormData();
+        // form.append('name',file.name)
+        form.append('file',file);
+       
+       console.log(form)
+       var myajax  =new XMLHttpRequest();
+       myajax.open('POST','https://video-d120f.firebaseio.com/file.json',true);
+       myajax.onload = function(){
+        console.log(this)
+       }
+       myajax.send(form);
+    }
+    </script>
+</body>
+</html>

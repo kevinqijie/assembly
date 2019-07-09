@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    
+}
+.warrper{
+    width: 650px;
+    height: 600px;
+    margin: 100px auto;
+    background: url('img/beijing.jpg') no-repeat 100% 100%;
+    position: relative;
+    
+}
+.warrper .jiangp{
+   position: absolute;
+   left: 50%;
+   margin-left: -208px;
+   top: 50%;
+   margin-top: -240px;
+   transition: all 3s
+  /* transform: rotate('30deg') */
+}
+.warrper .btn{
+    position: absolute;
+    width: 150px;
+    height: 200px;
+    display: inline-block;
+    background: url('img/840264-20171102114756216-1762498679.png') no-repeat ;
+    background-size: 100% 100%;
+    left: 50%;
+    top: 50%;
+    margin-left: -65px;
+    margin-top: -120px;
+}

@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    border-radius: 3px;
+}
+.warrper{
+    width: 400px;
+    /* height: 500px; */
+    margin: 10px auto;
+    border: 2px #ff4422 solid;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.warrper div{
+    width: 120px;
+    height: 120px;
+    margin: 10px auto;
+    background: #ff4422;
+}
+.warrper a{
+    box-sizing: border-box;
+    width: 360px;
+    height: 60px;
+    /* background: #f42; */
+    border: 2px solid #f42;
+    margin-bottom: 10px;
+    text-align: center;
+    line-height: 56px;
+    color: #f42;
+    text-decoration: none;
+}

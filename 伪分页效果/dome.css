@@ -1,0 +1,57 @@
+*{
+margin: 0;
+padding: 0;    
+}
+ul li,a{
+
+    list-style: none;
+    text-decoration: none;
+    color:#000;
+}
+.celarfex::after,
+.celarfex::before{
+    display: table;
+    clear: both;
+    content: "";
+}
+.warrper{
+    width: 800px;
+    margin: 40px auto;
+    border: #aaa 1px solid;
+    padding: 20px;
+    border-radius: 5px;
+    /* position: relative; */
+}
+
+.warrper .showbox ul li{
+ float: left;
+ width: 350px;
+ margin: 10px 30px 10px 20px;
+ height: 250px;
+ background: #f40;
+ text-align: center;
+ line-height: 250px;
+ font-size: 40px;
+    
+}
+.warrper .controlbox{
+    margin-top: 30px;
+    position: relative; 
+    /* width: 100% */
+    height: 50px;
+}
+.warrper .controlbox .box{
+    position: absolute;
+    right: 50px;
+
+}
+.warrper .controlbox a{
+    padding: 10px;
+    border: #aaa 1px solid;
+}
+.warrper .controlbox span{
+    padding: 3px;
+}
+.warrper .showbox ul li:gt(3){
+    display: none;
+}

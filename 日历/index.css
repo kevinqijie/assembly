@@ -1,0 +1,74 @@
+body,ul,li,div,span{
+    margin: 0;
+    padding: 0;
+    display: block;
+    list-style: none;
+    font-family: "微软雅黑";
+}
+.clearfloat::after{
+    display: block;
+    clear: both;
+    content: '';
+}
+.warrper{
+    width: 468px;
+    margin: 0 auto;
+    background: #555450;
+    padding: 30px;
+    box-sizing: border-box;
+}
+.time-box span{
+    height: 64px;
+    font-size: 43px;
+    line-height: 64px;
+    color: #fff;
+}
+.time-box .date{
+    color: #429ce3;
+    height: 38px;
+    font-size: 18px;
+    line-height: 38px;
+}
+.year-box{
+   color: #dddddc;
+   height: 53px;
+   font-size: 25px;
+   line-height: 53px;
+}
+.year-box span{
+    float: left;
+    font-weight: normal;
+}
+.year-box span.btn{
+    float: right;
+    cursor: pointer;
+    margin: 0 10px;
+    font-size: 45px;
+}
+.year-box span.btn:hover{
+    background: #429ce3;
+}
+ul li{
+    float: left;
+    width: 58px;
+    height: 50px;
+    font-size: 22px;
+    line-height: 50px;
+    color: #fff;
+    text-align: center;
+}
+.list span{
+    float: left;
+    width: 58px;
+    height: 50px;
+    font-size: 22px;
+    line-height: 50px;
+    color: #fff;
+    text-align: center;
+}
+.list span.color{
+    color: #8d8c89;
+}
+.list span.active{
+    background: #0078d7;
+}

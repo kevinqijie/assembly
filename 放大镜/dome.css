@@ -1,0 +1,35 @@
+html,body{
+    margin: 0;
+    padding: 0;
+}
+.warrper{
+    width: 800px;
+    height: 800px;
+    margin: 100px auto;
+    display: flex;
+}
+.min{
+    background: url('./img/min.jpg')no-repeat;
+    background-size: 100% 100%;
+    width: 400px;
+    height: 400px;
+    position: relative;
+    /* z-index: 100; */
+}
+.crea{
+    position: absolute;
+    display: none;
+    width: 200px;
+    height: 200px;
+    background: url('./img/meng.png');
+    top: 100px;
+    left: 100px;
+
+}
+.max{
+    display: none;
+    background: url('./img/max.jpg') 0 0 no-repeat;
+    width: 400px;
+    height: 400px;
+   
+}

@@ -1,0 +1,58 @@
+html,
+body,
+ul,
+li,
+div,
+input {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+.container {
+    /* font-size: 0; */
+    margin: 10px auto;
+    width: 360px;
+}
+
+input {
+    width: 360px;
+    height: 30px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    outline: none;
+    box-shadow: 1px 1px 1px #ccc;
+}
+
+.list {
+    border: 1px solid #ccc;
+    max-height: 300px;
+    /* overflow: hidden; */
+    overflow: auto;
+    margin-top: 5px;
+}
+/* .list::-webkit-scrollbar{
+    width: 10px;
+    height: 100%;
+    background: #aaa;
+} */
+
+.list li {
+    height: 30px;
+    color: #aaa;
+    line-height: 30px;
+    white-space: nowrap;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+}
+.list li.active{
+    background: #ddd;
+}
+.key{
+    color: red;
+}

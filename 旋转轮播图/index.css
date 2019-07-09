@@ -1,0 +1,102 @@
+body,div,html{
+    margin: 0;
+    padding: 0;
+    background: #aaa;
+}
+ul li{
+    list-style: none;
+}
+.warrper{
+    width: 1000px;
+    height: 400px;
+    margin: 100px auto;
+    font-size: 0;
+    border: 1px solid #000;
+    position: relative;
+    perspective:500px;
+}
+.btn{
+    position: absolute;
+    font-size: 24px;
+    width: 50px;
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
+    font-weight: bold;
+    background: rgba(0,0,0,0.6);
+    color: #fff;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100;
+    cursor: pointer;
+}
+.btn.left{
+    left: 0px;
+   
+}
+.btn.right{
+    right: 0px;
+}
+.warrper img{
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    transition: all 1s;
+}
+.warrper img.show1{
+  width: 200px;
+  height: 100px;
+  left: 0;
+  z-index: 77;
+  opacity: 0;
+}
+.warrper img.show2{
+   width: 300px;
+   height: 240px;
+   left: 10%; 
+   z-index: 88;
+   transform: translateY(-50%) rotateY(45deg);
+}
+.warrper img.show3{
+    width: 400px;
+    height: 300px;
+    left: 50%;
+    transform: translate(-50%,-50%) ;
+    z-index: 99;
+}
+.warrper img.show4{
+    width: 300px;
+    height: 240px;
+    left: 90%; 
+    transform: translate(-100%,-50%) rotateY(-45deg);
+    z-index: 88;
+}
+.warrper img.show5{
+    width: 200px;
+    height: 100px;
+    left: 100%;
+    transform: translate(-100%,-50%);
+    z-index: 77;
+    opacity: 0;
+}
+.warrper .list{
+width: 300px;
+height: 20px;
+position: absolute;
+bottom: 10px;
+left: 50%;
+transform: translateX(-50%);
+
+display:flex;
+align-items:center;
+}
+.warrper .list li{
+background: #fff;
+width: 40px;
+height: 15px;
+margin-left: 10px;
+cursor: pointer;
+}
+.warrper .list li.active{
+    background: red;
+}

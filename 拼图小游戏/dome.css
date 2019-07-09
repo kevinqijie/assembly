@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.warrper{
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    border: 1px solid #aaaaaa;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
+}

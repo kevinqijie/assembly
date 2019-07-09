@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+.filebox{
+    margin: 50px auto;
+    width: 90px;
+    height: 30px;
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.file{
+    width: 90px;
+    height: 30px;
+    position: relative;
+    z-index: 20;
+    opacity: 0;
+}
+.btn{
+    position: absolute;
+   display: inline-block;
+   width: 90px;
+   height: 30px;
+   background: blue;
+   top: 0;
+   left: 0;
+   text-align: center;
+   line-height: 30px;
+}

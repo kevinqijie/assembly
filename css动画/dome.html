@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .btn {
+            width: 80px;
+            margin: 0 auto;
+            height: 70px;
+            font: 18px/70px '微软雅黑';
+            text-align: center;
+            background: #39d303;
+            animation: color 5s infinite;
+            direction: rtl;
+            unicode-bidi: bidi-override;
+        }
+
+        @keyframes color {
+            0% {
+                background: #39d303;
+            }
+
+            30% {
+                background: #ff0000;
+            }
+
+            60% {
+                background: #f40;
+            }
+
+            100% {
+                background: #04f;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="btn">
+        变换颜色
+    </div>
+</body>
+
+</html>
